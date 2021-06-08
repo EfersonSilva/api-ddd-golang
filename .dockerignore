@@ -1,0 +1,5 @@
+.pddata
+DockerBanco/
+*.yml
+*.exe
+*.md

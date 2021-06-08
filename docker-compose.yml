@@ -1,0 +1,29 @@
+version: "3.7"
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    environment: 
+      DB_HOST: db
+    links: 
+      - db
+  db:
+    image: postgres:9.5
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: bank
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 123456
+      PGDATA: /var/lib/postgresql/data/webapi
+    volumes:
+      - .pgdata:/var/lib/postgresql/data
+ 
+volumes:
+  webapi:
+
+
+  
