@@ -1,9 +1,9 @@
 package application
 
 import (
+	"test-stone/config"
 	"test-stone/domain"
-	"test-stone/framework/config"
-	"test-stone/framework/infrastructure"
+	"test-stone/repository/infrastructure"
 
 	"github.com/biezhi/gorm-paginator/pagination"
 )

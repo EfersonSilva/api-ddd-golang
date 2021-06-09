@@ -3,10 +3,10 @@ package application
 import (
 	"fmt"
 	"net/http"
+	"test-stone/config"
 	"test-stone/domain"
-	"test-stone/framework/config"
-	"test-stone/framework/infrastructure"
-	"test-stone/framework/tokenJWT"
+	"test-stone/domain/tokenJWT"
+	"test-stone/repository/infrastructure"
 
 	"golang.org/x/crypto/bcrypt"
 )

@@ -3,10 +3,10 @@ package application
 import (
 	"errors"
 	"net/http"
+	"test-stone/config"
 	"test-stone/domain"
-	"test-stone/framework/config"
-	"test-stone/framework/infrastructure"
-	"test-stone/framework/tokenJWT"
+	"test-stone/domain/tokenJWT"
+	"test-stone/repository/infrastructure"
 )
 
 //Adiciona transferencia

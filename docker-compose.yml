@@ -2,6 +2,7 @@ version: "3.7"
 
 services:
   web:
+    image: golang-api
     build: .
     ports:
       - "8000:8000"
